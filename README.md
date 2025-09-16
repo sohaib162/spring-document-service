@@ -2,7 +2,6 @@
 
 A small **document management** microservice built with Spring Boot. It manages **Users**, **Departments** (many‑to‑many with users), **Categories**, and **Documents**, and protects `/api/**` routes with a stateless JWT filter.
 
-![Swagger UI](swagger.png)
 
 ## Features
 - CRUD for **Departments**, **Categories**, **Documents**, and **Users**
@@ -116,3 +115,5 @@ curl -X POST http://localhost:8082/api/documents   -H "Authorization: Bearer $TO
 - Keep entity ID types consistent across entities, DTOs, `UserContext`, and JWT claims (`Long` recommended).
 - For production, replace `ddl-auto` with migrations (Flyway/Liquibase), and set stricter logging.
 
+
+![Swagger UI](swagger.png)
